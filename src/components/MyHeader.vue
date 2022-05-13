@@ -88,7 +88,7 @@ export default {
 @import '../assets/style/vars';
 
 header{
-  height: 100px;
+  height: 90px;
 
   .k_container{
     height: 100%;

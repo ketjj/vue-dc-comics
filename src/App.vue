@@ -2,6 +2,8 @@
   <div>
     <MyHeader/>
     <MyMain />
+    <MyExtraServices/>
+    <MyFooter />
 
 
   </div>
@@ -10,14 +12,17 @@
 <script>
 import MyHeader from '@/components/MyHeader';
 import MyMain from '@/components/MyMain';
-
+import MyExtraServices from '@/components/MyExtraServices';
+import MyFooter from '@/components/MyFooter';
 
 
 export default {
   name: 'App',
   components: {
     MyHeader,
-    MyMain
+    MyMain,
+    MyExtraServices,
+    MyFooter
 
   }
 }

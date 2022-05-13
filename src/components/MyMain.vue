@@ -1,5 +1,10 @@
 <template>
-  <main>M</main>
+  <main>
+    <div class="k_container">
+      <h2> --> CONTENT GOES HERE -- </h2>
+    </div>
+  </main>
+  
 </template>
 
 <script>
@@ -10,9 +15,17 @@ export default {
 </script>
 
 <style lang="scss">
-main{
-  min-height: 100px;
-  background-color: black;
-}
+@import '../assets/style/mixin';
+@import '../assets/style/vars';
 
+main{
+  min-height: 120px;
+  background-color: black;
+  color: white;
+   .k_container{
+    height: 120px;
+    display: flex;
+    align-items: center;
+   }   
+}
 </style>
