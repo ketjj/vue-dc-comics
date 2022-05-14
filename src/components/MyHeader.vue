@@ -128,7 +128,7 @@ header{
       }
       
       a{
-      text-transform: uppercase;
+      @include upper;
       color: black;
       }
 

@@ -3,7 +3,7 @@
  <div class="extraa">
     <div class="k_container">
      <div v-for="(service, index) in services" :key="`icons-${index}`">
-       <img :src="require(`../assets/img/${service.iconUrl}${service.formatImage}`)" :alt="`${service.title}`"> 
+       <img :src="require(`../assets/img/${service.iconUrl}${service.formatImage}`)" :alt="`${service.title}`" width:20px > 
        <!-- <img src="../assets/img/buy-comics-digital-comics.png" alt="digital comics"> -->
        <span>{{service.title}}</span>
      </div>
@@ -25,7 +25,7 @@ export default {
           href: '#',
           iconUrl:  'buy-comics-digital-comics',
           formatImage: '.png',
-          title: 'digital comics'
+          title: 'digital comics',
         },
         {
           href: '#',
@@ -64,7 +64,7 @@ export default {
 
 .extraa{
   background-color: $primary-color;
-  height: 160px;
+  height: 140px;
   color:white;
   .k_container{
     @include center;
@@ -81,13 +81,11 @@ export default {
     }
     }
     img{
-      width: 40px;
+      width: 42px;
+      height: 50px;
     }
 
   }
 }
-
-
-
 
 </style>

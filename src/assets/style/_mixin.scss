@@ -19,3 +19,8 @@
    text-transform: uppercase;
  }
 
+ @mixin imageCenter(){
+   background-position: center;
+   background-size: cover;
+ }
+

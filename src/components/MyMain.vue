@@ -19,8 +19,8 @@ export default {
 @import '../assets/style/vars';
 
 main{
-  min-height: 120px;
-  background-color: black;
+  min-height: 100px;
+  background-color: $secondary-color;
   color: white;
    .k_container{
     height: 120px;
