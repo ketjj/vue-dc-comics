@@ -65,7 +65,7 @@ export default {
 .extraa{
   background-color: $primary-color;
   height: 140px;
-  color:white;
+  color: $color-white;
   .k_container{
     @include center;
     padding: 0 0 0 40px;

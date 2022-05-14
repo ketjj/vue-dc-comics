@@ -21,7 +21,7 @@ export default {
 main{
   min-height: 100px;
   background-color: $secondary-color;
-  color: white;
+  color: $color-white;
    .k_container{
     height: 120px;
     display: flex;
