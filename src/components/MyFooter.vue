@@ -92,6 +92,29 @@ export default {
         'fa-brands fa-youtube',
         'fa-brands fa-pinterest-p',
         'fa-solid fa-location-dot'
+      ],
+
+
+      firstColumn: [
+        {
+          title: 'dc comics',
+          list: [
+            'Characters',
+            'Comics',
+            'Movies',
+            'TV',
+            'Games',
+            'Videos',
+            'News'
+          ]          
+        },
+        {
+          title: 'shop',
+          list: [
+            'Shop DC',
+            'Shop DC Collectibles',
+            ]
+        }
       ]
     }
   }
@@ -113,6 +136,7 @@ footer{
     @include imageCenter;
     .col{
       padding-left: 0;
+      height: 200px;
     }
     img {
       height: 450px; 
@@ -124,7 +148,7 @@ footer{
       &:hover{
         color: lighten($secondary-color, 70% );
         cursor: pointer;
-      }
+      }  
     }
     h6{
       font-weight: 600;

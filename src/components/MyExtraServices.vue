@@ -7,8 +7,6 @@
        <!-- <img src="../assets/img/buy-comics-digital-comics.png" alt="digital comics"> -->
        <span>{{service.title}}</span>
      </div>
-
-
     </div>
  </div>
   
@@ -81,7 +79,7 @@ export default {
     }
     }
     img{
-      width: 42px;
+      max-width: 42px;
       height: 50px;
     }
 

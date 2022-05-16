@@ -1,31 +1,47 @@
 <template>
   <main>
-    <div class="k_container">
-      <h2> --> CONTENT GOES HERE -- </h2>
+    <div class="k_container py-5">
+      <MyMainCards
+      v-for="(card, index) in DCcomics" :key="index"
+      class="k_card"
+      :card="card"
+       />
+
     </div>
+
   </main>
   
 </template>
 
 <script>
+import DCcomics from '../assets/data/DCcomics'
+import MyMainCards from '@/components/MyMainCards'
 export default {
-  name: 'MyMain'
+  name: 'MyMain',
+  components: {MyMainCards },
+  data(){
+    return{
+      DCcomics
+    }
+  }
 
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '../assets/style/mixin';
 @import '../assets/style/vars';
 
 main{
-  min-height: 100px;
   background-color: $secondary-color;
   color: $color-white;
    .k_container{
-    height: 120px;
+    min-height: 120px;
     display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
     align-items: center;
-   }   
+   }
+  
 }
 </style>
